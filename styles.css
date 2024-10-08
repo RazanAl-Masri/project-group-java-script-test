@@ -1,84 +1,99 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: white;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  text-align: center;
-  margin: 20px;
+    margin: 20px;
 }
 
 h2 {
-  color: #ff7f50;
+    color: white; /* Changed to white */
+    text-align: left; /* Aligned text to the left */
 }
 
 .card-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
-  background-color: #222;
-  border-radius: 5px 0px 0px 0px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  width: 395px;
-  height: 574px;
+    background-color: #222;
+    border-radius: 5px 0px 0px 0px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 395px;
+    height: 574px;
+    position: relative;
 }
 
 .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 80%; /* Set the image to cover 80% of the card height */
+    object-fit: cover;
 }
 
 .card-info {
-  padding: 10px;
-  text-align: center;
+    padding: 10px;
+    text-align: center;
 }
 
 .card-info h3 {
-  margin: 10px 0 5px 0;
+    margin: 5px 0;
 }
 
 .card-info p {
-  margin: 0;
-  color: #ff7f50;
+    margin: 0;
+    color: #ff7f50;
+}
+
+.rating {
+    color: orange;
+    margin-top: 5px;
+    font-size: 18px;
 }
 
 .card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Tablet View */
 @media (max-width: 768px) {
-  .card {
-      width: 224px;
-      height: 325px;
-  }
+    .card {
+        width: 224px;
+        height: 325px;
+    }
 
-  .card-container {
-      gap: 10px;
-  }
+    .card-container {
+        gap: 10px;
+    }
+
+    .card img {
+        height: 75%;
+    }
 }
 
 /* Mobile View */
 @media (max-width: 480px) {
-  .card-container {
-      display: flex;
-      overflow-x: auto;
-      flex-wrap: nowrap;
-  }
+    .card-container {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
 
-  .card {
-      flex: 0 0 auto;
-      width: 280px;
-      height: 406px;
-      margin-right: 10px;
-  }
+    .card {
+        flex: 0 0 auto;
+        width: 280px;
+        height: 406px;
+        margin-right: 10px;
+    }
+
+    .card img {
+        height: 70%;
+    }
 }
