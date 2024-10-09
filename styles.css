@@ -90,28 +90,26 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Tablet View */
+/* Tablet View - Keep 3 cards side by side */
 @media (max-width: 768px) {
     .card {
-        width: calc(50% - 15px);  /* Make each card take 50% of the width on smaller screens */
-        height: 325px;
+        width: calc(33.33% - 20px);  /* Same layout as desktop with 3 cards */
+        height: 550px;
     }
 }
 
-/* Mobile View */
+/* Mobile View - Only show Ghosted */
 @media (max-width: 480px) {
     .card-container {
-        display: flex;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        padding-left: 0;
-        padding-right: 0;
+        justify-content: center;
     }
 
     .card {
-        flex: 0 0 auto;
-        width: 280px;
-        height: 406px;
-        margin-right: 10px;
+        width: 100%; /* Ghosted takes full width */
+    }
+
+    /* Hide the Quantumania and Evil Dead cards */
+    #quantumania, #evil-dead-rise {
+        display: none;
     }
 }
