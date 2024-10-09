@@ -16,7 +16,8 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-bottom: 20px; /* Adds some space between header and cards */
+    padding-bottom: 20px; /* Adds more space to lift text above the cards */
 }
 
 h2 {
@@ -24,6 +25,7 @@ h2 {
     margin-left: 0;
     margin-bottom: 0;
     align-self: flex-start;
+    font-size: 24px;
 }
 
 .see-all {
@@ -43,7 +45,6 @@ h2 {
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: -10px;
 }
 
 .card {
@@ -110,4 +111,17 @@ h2 {
     .card-container {
         display: flex;
         overflow-x: auto;
-        flex-wrap:
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        width: 280px;
+        height: 406px;
+        margin-right: 10px;
+    }
+
+    .card img {
+        height: 70%;
+    }
+}
