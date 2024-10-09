@@ -43,7 +43,7 @@ h2 {
 .card-container {
     display: flex;
     justify-content: flex-start; /* Cards aligned to the left */
-    gap: 5px; /* Reduced gap between the cards */
+    gap: 10px; /* Reduced gap between the cards */
     flex-wrap: wrap;
 }
 
