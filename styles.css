@@ -42,8 +42,8 @@ h2 {
 
 .card-container {
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    justify-content: flex-start; /* Cards aligned to the left */
+    gap: 5px; /* Reduced gap between the cards */
     flex-wrap: wrap;
 }
 
@@ -52,8 +52,8 @@ h2 {
     border-radius: 5px 0px 0px 0px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    width: 395px;
-    height: 574px;
+    width: 380px; /* Slightly reduced width */
+    height: 550px; /* Slightly reduced height */
     position: relative;
 }
 
@@ -98,7 +98,7 @@ h2 {
     }
 
     .card-container {
-        gap: 10px;
+        gap: 5px; /* Reduced gap for tablet view as well */
     }
 
     .card img {
@@ -112,6 +112,7 @@ h2 {
         display: flex;
         overflow-x: auto;
         flex-wrap: nowrap;
+        gap: 5px; /* Even smaller gap for mobile */
     }
 
     .card {
