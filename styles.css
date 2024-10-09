@@ -43,7 +43,7 @@ h2 {
 .card-container {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
